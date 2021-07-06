@@ -1,0 +1,2 @@
+(this["webpackJsonpgoit-react-hw-02-phonebook"]=this["webpackJsonpgoit-react-hw-02-phonebook"]||[]).push([[1],{107:function(t,e,o){"use strict";o.r(e);o(0);var c=o(1);e.default=function(){return Object(c.jsx)("div",{children:Object(c.jsx)("h1",{children:"\u0414\u043e\u0431\u0440\u043e \u043f\u043e\u0436\u0430\u043b\u043e\u0432\u0430\u0442\u044c \u043d\u0430 \u0441\u0430\u0439\u0442 Contacts.APP"})})}}}]);
+//# sourceMappingURL=home-view.5cbe9078.chunk.js.map
