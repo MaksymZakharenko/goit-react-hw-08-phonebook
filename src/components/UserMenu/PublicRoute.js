@@ -13,7 +13,6 @@ const PublicRoute = ({
   <Route
     {...routeProps}
     render={(props) => {
-      console.log(isAuthenticated);
       return isAuthenticated && restricted ? (
         <Redirect to={redirectTo} />
       ) : (

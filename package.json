@@ -1,6 +1,6 @@
 {
   "name": "goit-react-hw-02-phonebook",
-  "homepage": "https://Maksym-1989.github.io/goit-react-hw-08-phonebook",
+  "homepage": "https://MaksymZakharenko.github.io/goit-react-hw-08-phonebook",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -49,7 +49,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.0",
+    "gh-pages": "^3.2.3",
     "prop-types": "^15.7.2",
     "redux-devtools-extension": "^2.13.9"
   }
