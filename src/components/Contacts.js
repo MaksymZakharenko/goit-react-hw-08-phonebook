@@ -9,7 +9,7 @@ const Contacts = () => {
     <div className="container">
       <h1 className={styles.title}>Phonebook</h1>
       <ContactForm />
-      <h2 className={styles.titleContact}>Contacts</h2>
+      <h2 className={styles.title}>Contacts</h2>
       <div className={styles.block}>
         <Filter />
         <ContactList />

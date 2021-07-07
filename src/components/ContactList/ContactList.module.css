@@ -1,21 +1,23 @@
 .ul {
-    padding-left: 20px;
-    font-size: 15px;
-    font-weight: 600;
-    justify-content: space-between;
-    width: 200px;
+  padding-left: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  justify-content: space-between;
+  width: 200px;
 }
 .btn {
   margin-left: 10px;
-  background-color: rgb(166, 195, 238);
+  border-radius: 15px;
+  background-color: rgb(126, 13, 155);
   cursor: pointer;
 }
 
 .btn:hover {
-  background-color: rgb(42, 84, 148);
+  background-color: rgb(226, 26, 159);
 }
 
 .textContent {
   justify-content: space-between;
   display: flex;
+  margin-bottom: 5px;
 }

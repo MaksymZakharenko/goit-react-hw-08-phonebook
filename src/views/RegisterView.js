@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { register } from "../redux/auth/auth.operations";
+import styles from "./Views.Module.css";
 
 class RegisterView extends Component {
   state = {
@@ -14,18 +15,22 @@ class RegisterView extends Component {
   };
   handleSubmit = (e) => {
     e.preventDefault();
-    this.props.onRegister(this.state)
+    this.props.onRegister(this.state);
     this.setState({ name: "", email: "", password: "" });
   };
 
   render() {
     const { name, email, password } = this.state;
     return (
-      <div>
-        <h1>Страница регистрации</h1>
-        <form onSubmit={this.handleSubmit} autoComplete="off">
-          <lable>
-            Имя пользователя
+      <div className={styles.regist}>
+        <h1 className={styles.registTitle}>Страница регистрации</h1>
+        <form
+          onSubmit={this.handleSubmit}
+          autoComplete="off"
+          className={styles.form}
+        >
+          <lable className={styles.registLable}>
+            <p className={styles.registrP}>Имя пользователя</p>
             <input
               type="text"
               name="name"
@@ -33,8 +38,8 @@ class RegisterView extends Component {
               onChange={this.handleChange}
             ></input>
           </lable>
-          <lable>
-            Почта
+          <lable className={styles.registLable}>
+            <p className={styles.registrP}>Почта</p>
             <input
               type="email"
               name="email"
@@ -42,8 +47,8 @@ class RegisterView extends Component {
               onChange={this.handleChange}
             ></input>
           </lable>
-          <lable>
-            Пароль
+          <lable className={styles.registLable}>
+            <p className={styles.registrP}>Пароль</p>
             <input
               type="password"
               name="password"
@@ -51,10 +56,10 @@ class RegisterView extends Component {
               onChange={this.handleChange}
             ></input>
           </lable>
-          <button type="submit">
+          <button type="submit" className={styles.registLButton}>
             {this.props.location.pathname === "/registration"
-              ? "register"
-              : "login"}
+              ? "REGISTER"
+              : "LOGIN"}
           </button>
         </form>
       </div>

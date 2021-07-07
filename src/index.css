@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(./img/bgc.jpeg);
+  background-size:cover;
+  background-repeat: no-repeat;
 }
 
 code {
@@ -13,9 +16,13 @@ code {
 }
 
 * {
-  margin: 5px 0;
+  margin: 0;
 }
 
 .block {
   margin: 50px;
+}
+
+a {
+  text-decoration: none;
 }

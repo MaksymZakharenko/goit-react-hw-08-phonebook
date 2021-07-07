@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { login } from "../redux/auth/auth.operations";
+import styles from "./Views.Module.css";
 
 class LoginView extends Component {
   state = {
@@ -20,11 +21,15 @@ class LoginView extends Component {
   render() {
     const { email, password } = this.state;
     return (
-      <div>
-        <h1>Страница логина</h1>
-        <form onSubmit={this.handleSubmit} autoComplete="off">
-          <lable>
-            Почта
+      <div className={styles.regist}>
+        <h1 className={styles.registTitle}>Страница логина</h1>
+        <form
+          onSubmit={this.handleSubmit}
+          autoComplete="off"
+          className={styles.form}
+        >
+          <lable className={styles.registLable}>
+            <p className={styles.registrP}>Почта</p>
             <input
               type="email"
               name="email"
@@ -32,8 +37,8 @@ class LoginView extends Component {
               onChange={this.handleChange}
             ></input>
           </lable>
-          <lable>
-            Пароль
+          <lable className={styles.registLable}>
+            <p className={styles.registrP}>Пароль</p>
             <input
               type="password"
               name="password"
@@ -41,10 +46,10 @@ class LoginView extends Component {
               onChange={this.handleChange}
             ></input>
           </lable>
-          <button type="submit">
+          <button type="submit" className={styles.registLButton}>
             {this.props.location.pathname === "/registration"
-              ? "register"
-              : "login"}
+              ? "REGISTER"
+              : "LOGIN"}
           </button>
         </form>
       </div>
@@ -52,10 +57,8 @@ class LoginView extends Component {
   }
 }
 
-
 const mapDispatchToProps = {
   onLogin: login,
 };
 
 export default connect(null, mapDispatchToProps)(LoginView);
-

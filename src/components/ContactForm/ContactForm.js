@@ -47,9 +47,9 @@ class ContactForm extends Component {
   };
   render() {
     return (
-      <>
+      <div className={styles.block}>
         <form className={styles.form} onSubmit={this.onSubmit}>
-          <span className={styles.title}>Name</span>
+          <span className={styles.title}>Name:</span>
           <input
             onChange={this.handleChange}
             value={this.state.name}
@@ -59,7 +59,7 @@ class ContactForm extends Component {
             title="Имя может состоять только из букв, апострофа, тире и пробелов. Например Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan и т. п."
             required
           />
-          <span className={styles.title}>Number</span>
+          <span className={styles.title}>Number Tel:</span>
           <input
             name="number"
             type="tel"
@@ -86,7 +86,7 @@ class ContactForm extends Component {
             ""
           )}
         </div>
-      </>
+      </div>
     );
   }
 }
